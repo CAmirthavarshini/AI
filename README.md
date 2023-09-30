@@ -24,3 +24,9 @@ def preprocess_text(text):
     tokens = [stemmer.stem(word) for word in tokens]
     
     return " ".join(tokens)
+
+    from sklearn.linear_model import LogisticRegression
+
+model = LogisticRegression()
+model.fit(X_train, y_train)
+
